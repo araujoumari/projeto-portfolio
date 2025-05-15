@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="portfolio.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao meu Portfólio!</h1>
+        <button id="botaoModo">Modo</button>
+    </header>
+    <nav>
+        <ul>
+            <a href="#sobre">
+                <li>Sobre</li>
+            </a>
+            <a href="#projetos">
+                <li>Projetos</li>
+            </a>
+            <a href="#habilidades">
+                <li>Habilidades</li>
+            </a>
+            <a href="#contato">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        <div class="sobre" id="sobre">
+            <p></p>
+        </div>
+
+        <div class="projeto" id="projeto">
+            <a href="https://araujoumari.github.io/resident-evil/">Projeto 1 - Website de promoção do jogo "Resident Evill Village</a>
+            <a href="https://araujoumari.github.io/projeto-floricultura/">Projeto 2 - Website de uma Floricultura</a>
+            <a href="https://araujoumari.github.io/projeto-login/">Projeto 3 - Página de Login</a>
+        </div>
+
+        <div class="habilidades" id="habilidade">
+            <span>HTML</span>
+            <div class="barra">
+                <div class="preenchimento" style="width: 90%;" id="html">80%</div>
+              </div>
+            <span>CSS</span>
+            <div class="barra">
+                <div class="preenchimento" style="width: 90%;" id="css">80%</div>
+              </div>
+            <span>Python</span>
+            <div class="barra">
+                <div class="preenchimento" style="width: 90%;" id="python">70%</div>
+              </div>
+            <span>Javascript</span>
+            <div class="barra">
+                <div class="preenchimento" style="width: 90%;" id="javascript">40%</div>
+              </div>
+        </div>
+
+        <div class="contato" id="contato">
+            <form id="form">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@gmail.com">
+                </div>
+
+                <div class="campo">
+                    <input type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem">
+                </div>
+
+                <input type="submit" value="Enviar">
+              
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>desenvolvido por aaaa</p>
+    </footer>
+</body>
+</html>
