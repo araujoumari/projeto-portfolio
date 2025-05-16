@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="portfolio.js" defer></script>
-    <link rel="stylesheet" href="style.css">
     <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="portfolio.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Bem-vindo ao meu Portfólio!</h1>
         <button id="botaoModo">Modo</button>
     </header>
+
     <nav>
         <ul>
             <a href="#sobre">
@@ -28,35 +31,64 @@
             </a>
         </ul>
     </nav>
+
     <main>
         <div class="sobre" id="sobre">
-            <p></p>
+            <p>Sou uma jovem programadora em formação, atualmente cursando Análise e Desenvolvimento de Sistemas. Tenho
+                paixão por tecnologia, lógica e tudo o que envolve criação e inovação digital. Estou constantemente em
+                busca de aprender novas linguagens, ferramentas e boas práticas de desenvolvimento, com foco especial em
+                front-end.</p>
         </div>
 
-        <div class="projeto" id="projeto">
-            <a href="https://araujoumari.github.io/resident-evil/">Projeto 1 - Website de promoção do jogo "Resident Evill Village</a>
-            <a href="https://araujoumari.github.io/projeto-floricultura/">Projeto 2 - Website de uma Floricultura</a>
-            <a href="https://araujoumari.github.io/projeto-login/">Projeto 3 - Página de Login</a>
+        <div class="projeto" id="projetos">
+            <h2>Projetos</h2>
+
+            <div class="projetos-container">
+                <div class="card">
+                    <h3>Projeto 1</h3>
+                    <p>Website de promoção do jogo "Resident Evil Village"</p>
+                    <a href="https://araujoumari.github.io/resident-evil/" target="_blank">Ver projeto</a>
+                </div>
+
+                <div class="card">
+                    <h3>Projeto 2</h3>
+                    <p>Website de uma Floricultura</p>
+                    <a href="https://araujoumari.github.io/projeto-floricultura/" target="_blank">Ver projeto</a>
+                </div>
+
+                <div class="card">
+                    <h3>Projeto 3</h3>
+                    <p>Página de Login</p>
+                    <a href="https://araujoumari.github.io/projeto-login/" target="_blank">Ver projeto</a>
+                </div>
+            </div>
         </div>
 
-        <div class="habilidades" id="habilidade">
-            <span>HTML</span>
+
+        <div class="habilidades" id="habilidades">
+            <h2>Habilidades</h2>
+
             <div class="barra">
-                <div class="preenchimento" style="width: 90%;" id="html">80%</div>
-              </div>
-            <span>CSS</span>
+                <div class="titulo">HTML</div>
+                <div class="progresso"><span class="html" style="width: 90%;">90%</span></div>
+            </div>
+
             <div class="barra">
-                <div class="preenchimento" style="width: 90%;" id="css">80%</div>
-              </div>
-            <span>Python</span>
+                <div class="titulo">CSS</div>
+                <div class="progresso"><span class="css" style="width: 80%;">80%</span></div>
+            </div>
+
             <div class="barra">
-                <div class="preenchimento" style="width: 90%;" id="python">70%</div>
-              </div>
-            <span>Javascript</span>
+                <div class="titulo">Python</div>
+                <div class="progresso"><span class="python" style="width: 70%;">70%</span></div>
+            </div>
+
             <div class="barra">
-                <div class="preenchimento" style="width: 90%;" id="javascript">40%</div>
-              </div>
+                <div class="titulo">JavaScript</div>
+                <div class="progresso"><span class="js" style="width: 40%;">40%</span></div>
+            </div>
         </div>
+
 
         <div class="contato" id="contato">
             <form id="form">
@@ -71,16 +103,18 @@
                 </div>
 
                 <div class="campo">
-                    <input type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="4"></textarea>
                 </div>
 
                 <input type="submit" value="Enviar">
-              
             </form>
         </div>
     </main>
+
     <footer>
-        <p>desenvolvido por aaaa</p>
+        <p>Desenvolvido por Maria Eduarda Araújo dos Santos</p>
     </footer>
 </body>
+
 </html>
