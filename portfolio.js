@@ -20,7 +20,7 @@ document.addEventListener(function () {
         const email = document.getElementById("email").value.trim();
         const mensagem = document.getElementById("mensagem").value.trim();
 
-        if (nome === "" || email === "") {
+        if (nome === "" || email === "" || mensagem ==="") {
             event.preventDefault();
             alert("Por favor, preencha o nome e o e-mail.");
         } else {
